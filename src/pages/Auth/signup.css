@@ -1,0 +1,408 @@
+/* signup.css - Complete styles for the Ionic React Sign-up Page */
+
+/* ===== MAIN CONTAINER ===== */
+.signup-container {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a2a3a 0%, #0d1b2a 100%);
+  padding: 16px;
+  /* overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+}
+
+/* ===== LOGO STYLING ===== */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ===== HEADER TEXT ===== */
+.header-text {
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #F1C40F, #F39C12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-size: 200% auto;
+  animation: shimmer 3s infinite linear;
+}
+
+.welcome-subtitle {
+  font-size: 1rem;
+  color: #e0e0e0;
+  font-weight: 400;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* ===== CARD STYLING ===== */
+.auth-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
+  animation: float 6s ease-in-out infinite;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #F1C40F;
+}
+
+/* ===== INPUT FIELDS ===== */
+.input-container {
+  margin-bottom: 1.25rem;
+}
+
+.custom-input-label {
+  padding-left: 12px;
+}
+
+.custom-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: border 0.3s ease;
+}
+
+.custom-input-wrapper:focus-within {
+  border-color: #F1C40F;
+  box-shadow: 0 0 0 1px rgba(241, 196, 15, 0.3);
+  animation: glow 1.5s infinite alternate;
+}
+
+.custom-input-wrapper:hover:not(:focus-within) {
+  border-color: rgba(241, 196, 15, 0.3);
+}
+
+.input-icon {
+  color: #F1C40F;
+  font-size: 1.25rem;
+  margin-right: 8px;
+}
+
+.custom-input-signup {
+  --padding-start: 0;
+  --placeholder-color: rgba(255, 255, 255, 0.5);
+  --placeholder-opacity: 1;
+  --color: white;
+}
+
+.toggle-password-icon {
+  color: #F1C40F;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* ===== BUTTON STYLING ===== */
+.signup-button {
+  --background: linear-gradient(90deg, #F1C40F, #F39C12);
+  --background-hover: linear-gradient(90deg, #F39C12, #E67E22);
+  --background-activated: linear-gradient(90deg, #E67E22, #D35400);
+  --border-radius: 8px;
+  --color: #000;
+  font-weight: 600;
+  margin: 1rem 0;
+  height: 48px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(241, 196, 15, 0.3);
+  animation: pulse 2s infinite ease-in-out;
+  padding: 0px !important;
+  margin-left: 12px;
+}
+
+.signup-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.signup-button:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+/* ===== DIVIDER STYLING ===== */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.or-text {
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
+
+/* ===== SOCIAL BUTTONS ===== */
+.social-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.google-button,
+.apple-button {
+  flex: 1;
+  --background: transparent;
+  --background-hover: rgba(255, 255, 255, 0.05);
+  --background-activated: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(255, 255, 255, 0.2);
+  --border-radius: 8px;
+  --color: white;
+  font-size: 0.875rem;
+}
+
+/* ===== SIGN IN PROMPT ===== */
+.signin-prompt {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.signin-prompt strong {
+  color: #F1C40F;
+  margin-left: 4px;
+}
+
+.signin-prompt strong:hover {
+  text-decoration: underline;
+  color: #F39C12;
+}
+
+/* ===== IONIC COMPONENT OVERRIDES ===== */
+ion-content {
+  /* --background: transparent;
+  --overflow: hidden;
+  --keyboard-offset: 0 !important; */
+  overflow-x: hidden;
+}
+
+ion-item {
+  --background: transparent !important;
+  --background-hover: transparent !important;
+  --background-focused: transparent !important;
+  --border-color: transparent;
+  /* --padding-start: 0;
+  --inner-padding-end: 0; */
+}
+
+ion-label {
+  --color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+ion-input {
+  --background: transparent !important;
+  background: transparent !important;
+}
+
+/* ===== ANIMATION KEYFRAMES ===== */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.2);
+  }
+
+  to {
+    box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+
+  20% {
+    transform: scale(25, 25);
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 1.75rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .logo-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+@media (prefers-color-scheme: dark) {
+  .auth-card {
+    background: rgba(20, 20, 20, 0.7);
+  }
+}
+
+/* ===== ADDITIONAL ANIMATIONS ===== */
+/* Add a subtle bounce effect to the logo on hover */
+.logo-container:hover .logo-image {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Add a subtle scale effect to input fields on focus */
+.custom-input-wrapper:focus-within {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Add a subtle rotation to the icons on hover */
+.input-icon:hover,
+.toggle-password-icon:hover {
+  animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Add a subtle background animation to the container */
+.signup-container {
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

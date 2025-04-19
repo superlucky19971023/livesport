@@ -1,0 +1,77 @@
+.each_player_card {
+    width: 100%;
+    padding: 10px 30px;
+    border-top: 1px solid #eee;
+    margin: 0px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player_avatar {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+
+.avatar_image {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+
+.country_flag {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+
+.player_number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+
+.player_name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name1 {
+    width: fit-content;
+    color: rgb(152, 235, 152);
+}
+
+.name3 {
+    width: fit-content;
+}
+.name2 {
+    width: fit-content;
+    color: rgb(241, 134, 134);
+}
+
+.player_propertity {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: auto;
+}
+
+.player_private_info {
+    display: flex;
+    align-items: center;
+}
+
+.player_left {
+    display: flex;
+    flex-direction: row;
+}

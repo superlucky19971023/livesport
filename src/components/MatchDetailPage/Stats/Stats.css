@@ -1,0 +1,12 @@
+.shotmap_footer {
+    height: 30px;
+}
+
+.shotmap_content {
+    position: relative;
+}
+
+.shotmap_header {
+    font-weight: 700;
+    padding: 10px !important;
+}

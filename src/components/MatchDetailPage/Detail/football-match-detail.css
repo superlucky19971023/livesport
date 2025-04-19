@@ -1,0 +1,501 @@
+/* Header styles */
+
+.main-detail-content-container {
+  background-color: #eee;
+  padding-bottom: 50px;
+}
+.match-header-football {
+  padding-bottom: 16px;
+}
+
+.match-header ion-toolbar {
+  --background: transparent;
+}
+
+.subtitle-football {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.match-stage-football {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.match-status-football,
+.match-leg-football {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.match-derby-football {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+/* Segment styles */
+
+.sub-tabs-football ion-segment-button {
+  min-height: 44px;
+}
+
+.details-label-football {
+  border: 1px solid var(--ion-color-primary);
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+/* Match events styles */
+
+.section-title-football {
+  font-weight: 500;
+  margin: 0px !important;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.play-time-content-football {
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.play-time-header {
+  border: 1px solid #eee;
+  padding: 5px;
+}
+
+.filter-container-football {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 24px;
+}
+
+.filter-segment-football {
+  width: 50px;
+  min-width: 160px;
+  --background: transparent;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Timeline styles */
+.timeline-container-football {
+  position: relative;
+  padding: 8px 0;
+}
+
+.timeline-line-football {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e0e0e0;
+  transform: translateX(-50%);
+}
+
+.timeline-event-football {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.timeline-milestone-football {
+  display: flex;
+  justify-content: center;
+}
+
+.milestone-chip-football {
+  background-color: #f5f5f5;
+  color: #666;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.event-left-football,
+.event-right-football {
+  width: 45%;
+  padding: 0 8px;
+}
+
+.event-left-football {
+  text-align: right;
+}
+
+.event-time-football {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  z-index: 10;
+}
+
+.time-label-football {
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  padding: 2px 0;
+}
+
+.time-dot-football {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-top: 4px;
+}
+
+.player-name-football {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.player-assist-football {
+  font-size: 12px;
+  color: #888;
+}
+
+.timeline-end-football {
+  display: flex;
+  justify-content: center;
+}
+
+.ball-icon-football {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: white;
+  z-index: 10;
+}
+
+/* Play time card styles */
+.play-time-card-football {
+  box-shadow: none;
+}
+
+.play-time-header-football {
+  display: flex;
+  align-items: center;
+}
+
+.actual-time-football {
+  color: var(--ion-color-primary);
+  margin-bottom: 8px;
+}
+
+.active-progress-football {
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  --progress-background: var(--ion-color-primary);
+}
+
+.total-progress-football {
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  --progress-background: #e0e0e0;
+}
+
+.total-time-football {
+  text-align: right;
+  background-color: #eee;
+  color: black;
+  border-radius: 7px;
+  padding: 3px 7px;
+  width: fit-content;
+  font-size: 12px;
+}
+
+.show-more-btn-football {
+  --color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.stats-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Key Players Section */
+.players-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+
+.player-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.stats-column{
+  width: 100%;
+}
+
+.player-avatar-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.player-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.player-badge {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.player-badge.yellow {
+  background-color: #ffc107;
+  left: 0;
+}
+
+.player-badge.blue {
+  background-color: #3880ff;
+  right: 0;
+}
+
+.football-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.player-name {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.stat-item {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.stat-value {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.stat-label {
+  font-size: 8px;
+  color: #777;
+  line-height: 1.2;
+  width: 55px;
+  height: fit-content;
+  border-radius: 3px;
+  
+}
+
+/* Stats Section */
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px 15px;
+}
+
+.padding-content {
+  padding: 10px 15px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-badge {
+  padding: 4px 10px;
+  border-radius: 16px;
+  background-color: #7e57c2;
+  font-size: 10px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.stat-name {
+  color: #333;
+  width: fit-content;
+  font-size: 12px;
+}
+
+.stat-value-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-size: 10px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-icon {
+  color: #ffc107;
+  font-size: 20px;
+}
+
+.see-all-container {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.see-all-button {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Game Info Section */
+.game-info-item {
+  padding-left: 15px;
+}
+
+.date-badge {
+  width: 32px;
+  height: 32px;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.info-icon {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+ion-label h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+ion-label p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Segment customization */
+ion-segment {
+  --background: transparent;
+  border-bottom: 1px solid #eee;
+}
+
+ion-segment-button {
+  --indicator-color: #3880ff;
+  --color-checked: #3880ff;
+  --color: #777;
+  text-transform: none;
+  height: 30px;
+  font-size: 10px;
+}
+
+ion-segment-button::part(indicator) {
+  height: 2px;
+}
+
+.matchDetailPosition-top-tab-container {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.matchDetailPosition-top-tab {
+  width: 33.3333%;
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s;
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+.matchDetailPosition-top-tab:hover {
+  color:#1976d2f0;
+}
+
+.matchDetailPosition-top-tab-selected {
+  color:#1976d2;
+  border-bottom: 2px solid #1976d2;
+}
+
+.matchDetailEvents-top-tab-container {
+  display: flex;
+  width: 100%;
+}
+
+.matchDetailEvents-top-tab {
+  width: 50%;
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s;
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+.matchDetailEvents-top-tab:hover {
+  color:#1976d2f0;
+}

@@ -1,0 +1,189 @@
+.add-card-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Card Preview Styles */
+.card-preview {
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  border-radius: 16px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-type {
+  font-size: 14px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.card-number {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-holder .label {
+  font-size: 10px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.card-holder .value {
+  font-size: 14px;
+}
+
+.card-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chip-icon {
+  width: 40px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.cvc-text {
+  font-size: 14px;
+}
+
+/* Card Details Form Styles */
+.card-details {
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-details h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.custom-input-details {
+  --background: #f5f5f5;
+  --border-radius: 8px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --highlight-height: 0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.add-card-button {
+  --background: linear-gradient(45deg, #FF9800, #F57C00);
+  --border-radius: 8px;
+  --box-shadow: none;
+  margin-top: 16px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Ion-specific overrides */
+ion-input.custom-input {
+  --border-radius: 8px;
+  --background: #f5f5f5;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  --highlight-height: 0;
+  margin-bottom: 16px;
+}
+
+ion-checkbox {
+  --size: 20px;
+  --border-color: #666666;
+  --checkbox-background:#ffffff;
+  --checkmark-color: #fff;
+  --checkbox-background-checked: #FF9800;
+  --border-radius: 4px;
+}
+
+ion-label {
+  /* margin-left: 8px; */
+  color: #666;
+}
+
+/* Stripe Elements Styles */
+.stripe-element-container {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.stripe-element-container label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stripe-element {
+  padding: 10px 0;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 0 0 1px #FF9800;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.card-error {
+  color: #fa755a;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 360px) {
+  .card-number {
+    font-size: 20px;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+}

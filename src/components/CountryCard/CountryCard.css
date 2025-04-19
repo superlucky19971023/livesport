@@ -1,0 +1,52 @@
+.counryCard-contianer {
+  padding: 10px 10px;
+}
+
+.countryCard-header {
+  height: fit-content;
+  background-color: white;
+  box-shadow: -1px 0px 4px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px;
+  align-items: center;
+}
+
+.countryCard-header-label {
+  padding-left: 6 px;
+  font-size: 12px;
+}
+
+.countryCard-content {
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: -1px 0px 4px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countryCard-title {
+  padding: 3px 2px;
+  text-align: left;
+  font-size: 12px;
+  width: 100%;
+  padding: 8px 10px;
+}
+
+.arrow {
+  color: black;
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+  color: #888;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,342 @@
+/* signin.css - Styles for the Ionic React Sign-in Page */
+
+/* Main container styling */
+.signin-container {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a2a3a 0%, #0d1b2a 100%);
+    padding: 16px;
+    /* overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+}
+
+/* Header text styling */
+.header-text {
+    margin-bottom: 2rem;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #F1C40F, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-subtitle {
+    font-size: 1rem;
+    color: #e0e0e0;
+    font-weight: 400;
+}
+
+/* Card styling with glass morphism effect */
+.auth-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-top: 8px;
+    color: #F1C40F;
+}
+
+/* Input field styling */
+.input-container {
+    margin-bottom: 1.25rem;
+    margin-left: 1rem;
+}
+
+.custom-input-label {
+    padding-left: 12px;
+}
+
+.custom-input-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08); /* Darker semi-transparent background */
+    border-radius: 8px;
+    padding: 4px 12px;
+    margin: 8px 12px 0px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.custom-input-wrapper:focus-within {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #F1C40F;
+    box-shadow: 0 0 0 1px rgba(241, 196, 15, 0.3);
+}
+
+.input-icon {
+    color: #F1C40F;
+    font-size: 1.25rem;
+    margin-right: 8px;
+}
+
+.custom-input-signin {
+    --padding-start: 0;
+    --padding-end: 0;
+    --background: transparent !important; /* Force transparent background */
+    --color: white;
+    --placeholder-color: rgba(255, 255, 255, 0.5);
+    --placeholder-opacity: 1;
+}
+
+.toggle-password-icon {
+    color: #F1C40F;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/* Form options styling (remember me & forgot password) */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me {
+    --background: transparent;
+    --background-hover: transparent;
+    --min-height: auto;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+}
+
+ion-checkbox {
+    --size: 18px;
+    --checkbox-background-checked: #F1C40F;
+    --border-color: rgba(255, 255, 255, 0.3);
+    --border-color-checked: #F1C40F;
+    --checkmark-color: #000;
+    margin-right: 8px;
+}
+
+.forgot-password {
+    color: #F1C40F;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+/* Sign-in button styling */
+.signin-button {
+    --background: linear-gradient(90deg, #F1C40F, #F39C12);
+    --background-hover: linear-gradient(90deg, #F39C12, #E67E22);
+    --background-activated: linear-gradient(90deg, #E67E22, #D35400);
+    --border-radius: 8px;
+    --color: #000;
+    font-weight: 600;
+    margin: 1rem 12px;
+    height: 48px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(241, 196, 15, 0.3);
+    padding: 0px !important;
+}
+
+/* Divider styling */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.or-text {
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+}
+
+/* Social login buttons styling */
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.google-button, .apple-button {
+    flex: 1;
+    --background: transparent;
+    --background-hover: rgba(255, 255, 255, 0.05);
+    --background-activated: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.2);
+    --border-radius: 8px;
+    --color: white;
+    font-size: 0.875rem;
+}
+
+/* Sign-up prompt styling */
+.signup-prompt {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.signup-prompt strong {
+    color: #F1C40F;
+    margin-left: 4px;
+}
+
+/* Animation keyframes for continuous animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 5px rgba(241, 196, 15, 0.2); }
+    to { box-shadow: 0 0 10px rgba(241, 196, 15, 0.5); }
+}
+
+/* Apply animations to elements */
+.signin-button {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.welcome-title {
+    background-size: 200% auto;
+    animation: shimmer 3s infinite linear;
+}
+
+.auth-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+.custom-input-wrapper:focus-within {
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 480px) {
+    .welcome-title {
+        font-size: 1.75rem;
+    }
+    
+    .welcome-subtitle {
+        font-size: 0.875rem;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Additional Ionic component customizations */
+ion-content {
+    --background: transparent;
+    /* --overflow: hidden;
+    --keyboard-offset: 0 !important;
+    overflow-x: hidden; */
+}
+
+ion-item {
+    --background: transparent !important;
+    --background-hover: transparent !important;
+    --background-focused: transparent !important;
+    --highlight-color-focused: transparent;
+}
+
+ion-input {
+    --background: transparent;
+    background: transparent !important;
+}
+
+ion-label {
+    --color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Add ripple effect to buttons */
+.signin-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.signin-button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+/* Add subtle hover effects */
+.custom-input-wrapper:hover:not(:focus-within) {
+    border-color: rgba(241, 196, 15, 0.3);
+}
+
+.forgot-password:hover, 
+.signup-prompt strong:hover {
+    text-decoration: underline;
+    color: #F39C12;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .auth-card {
+        background: rgba(20, 20, 20, 0.7);
+    }
+}

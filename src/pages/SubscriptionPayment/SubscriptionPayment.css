@@ -1,0 +1,191 @@
+.subscription-container {
+  padding: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscription-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.subscription-card-header{
+  align-items: center;
+}
+
+.plan-summary {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.plan-summary h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.plan-price .currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.plan-price .amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.plan-price .interval {
+  color: #666;
+  font-size: 1rem;
+}
+
+.payment-form {
+  margin-bottom: 24px;
+}
+
+.form-item {
+  --background: transparent;
+  --border-color: #ddd;
+  --border-radius: 8px;
+  --padding-start: 0;
+  margin-bottom: 16px;
+}
+
+.stripe-element-container {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.stripe-element-container label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stripe-element {
+  padding: 10px 0;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card-error {
+  color: #fa755a;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.checkbox-item {
+  --background: transparent;
+  --border-color: transparent;
+  --padding-start: 0;
+  padding-left: 16px;
+}
+
+.subscription-terms {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.subscribe-button {
+  --background: linear-gradient(45deg, #2196F3, #1976D2);
+  --border-radius: 8px;
+  --box-shadow: none;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Saved Card Styles */
+.saved-card-section {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  /* margin-bottom: 24px; */
+}
+
+.saved-card-section h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.saved-card-info {
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  border-radius: 8px;
+  padding: 16px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.saved-card-info .card-brand {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.saved-card-info .card-number {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.saved-card-info .card-expiry {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.saved-card-info .card-holder {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.toggle-item {
+  --background: transparent;
+  --border-color: transparent;
+  margin-top: 8px;
+}
+
+/* Stripe Elements Styles */
+.StripeElement--focus {
+  box-shadow: 0 0 0 1px #2196F3;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+@media (max-width: 480px) {
+  .card-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,59 @@
+.calendar-modal {
+  --height: 50%;
+  --width: 90%;
+  --max-width: 400px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  padding: 10px;
+}
+
+.calendar-header {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.calendar-day {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  min-height: 60px;
+  border: 1px solid #eee;
+}
+
+.day-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.day-number {
+  margin-bottom: 4px;
+}
+
+.favorite-indicator {
+  color: #ffd700;
+  font-size: 16px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.other-month {
+  color: #ccc;
+}
+
+.selected {
+  background-color: #e0e0e0;
+}
+
+.has-events {
+  font-weight: bold;
+}

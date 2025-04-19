@@ -1,0 +1,43 @@
+.eachStatsCard_container {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border-top: 1px solid #eee;
+    padding: 0px 20px;
+}
+
+.card-content-md {
+    /* padding: 0px !important; */
+}
+
+.eachStatsCard_name {
+    height: 26px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.winner_score {
+    white-space: nowrap;
+    width: 80px;
+    height: 100%;
+    background-color: #7645c5;
+    color: white;
+    border-radius: 13px;
+    height: 26px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.loser_score {
+    white-space: nowrap;
+    width: 80px;
+    height: 26px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+    padding-top: 3px;
+}

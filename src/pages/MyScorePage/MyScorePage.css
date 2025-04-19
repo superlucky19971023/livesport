@@ -1,0 +1,43 @@
+.date-header {
+  background-color: var(--app-background);
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.date-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-title {
+  font-size: 12px !important;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.match-count {
+  font-size: 10px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.my-competition {
+  margin: 0px 16px 0px 8px;
+  font-size: 10px;
+  background-color: white;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+  border-radius: 20px;
+  padding: 3px 10px;
+  width: fit-content;
+}
+
+.scroll-y {
+  background-color: #eee;
+}
+
+.competition-section {
+  padding-bottom: 16px;
+}

@@ -1,0 +1,141 @@
+.pricing-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 48px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.plan-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.plan-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.plan-header p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  margin: 24px 0;
+}
+
+.plan-price .currency {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.plan-price .amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.plan-price .interval {
+  color: #666;
+  font-size: 1rem;
+}
+
+.features-section h3 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.features-list li {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.features-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2196F3;
+}
+
+.features-list li.disabled {
+  color: #999;
+}
+
+.features-list li.disabled::before {
+  color: #999;
+}
+
+.choose-button-dark {
+  --background: #2c3e50;
+  --background-hover: #34495e;
+  margin-top: auto;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+  --border-radius: 8px;
+}
+
+.choose-button-blue {
+  --background: #2c3e50;
+  --background-hover: #34495e;
+  margin-top: auto;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+  --border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .pricing-container {
+    padding: 24px 16px;
+  }
+
+  .pricing-container h1 {
+    font-size: 2rem;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,457 @@
+.match-header ion-toolbar {
+  --background: transparent;
+}
+
+.detail-image {
+  height: 40px;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 10px;
+}
+
+.detail-image .toolbar-container {
+  height: 40px;
+  justify-content: space-between;
+}
+
+.matchDetail-start {
+  width: 60px;
+}
+
+.matchDetail-end {
+  width: 60px;
+}
+
+.matchDetail-title-football {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+}
+
+.match-competition-name {
+  font-size: 12px;
+}
+
+.match-roundInfo-text{
+  font-size: 8px;
+}
+
+.subtitle-football {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.matchDetail-score-container-football {
+  padding: 0px 8px 8px 8px;
+}
+
+.team-container-football {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-logo-football {
+  width: 40px;
+  height: 40px;
+}
+
+.score-container-football {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.match-stage-football {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.matchDetail-top-tab-container {
+  display: flex;
+  width: 100%;
+}
+
+.matchDetail-top-tab {
+  width: 33.3333%;
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s;
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+.matchDetail-top-tab:hover {
+  color:#1976d2f0;
+}
+
+.matchDetail-top-tab-selected {
+  color:#1976d2;
+  border-bottom: 2px solid #1976d2;
+}
+
+.matchDetail-bottom-tab-container {
+  background-color: transparent;
+  padding: 5px 5px;
+  display: flex;
+  height: 40px !important;
+}
+
+.matchDetail-bottom-tab {
+  width: fit-content;
+  background-color: transparent;
+  margin: auto;
+  height: 25px;
+  padding: 0px 10px;
+  border-radius: 15px;
+}
+
+.matchDetail-bottom-tab-selected {
+  border: 1px solid #1976d2;
+}
+
+.score-football {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.match-status-football,
+.match-leg-football {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.match-derby-football {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+/* Segment styles */
+
+.sub-tabs-football ion-segment-button {
+  min-height: 44px;
+}
+
+.details-label-football {
+  border: 1px solid var(--ion-color-primary);
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+/* Match events styles */
+
+.filter-container-football {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Timeline styles */
+.timeline-container-football {
+  position: relative;
+  padding: 8px 0;
+}
+
+.timeline-line-football {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e0e0e0;
+  transform: translateX(-50%);
+}
+
+.timeline-event-football {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.timeline-milestone-football {
+  display: flex;
+  justify-content: center;
+}
+
+.milestone-chip-football {
+  background-color: #f5f5f5;
+  color: #666;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.event-left-football,
+.event-right-football {
+  width: 45%;
+  padding: 0 8px;
+}
+
+.event-left-football {
+  text-align: right;
+}
+
+.event-time-football {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  z-index: 10;
+}
+
+.time-label-football {
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  padding: 2px 0;
+}
+
+.time-dot-football {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-top: 4px;
+}
+
+.player-name-football {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.player-assist-football {
+  font-size: 12px;
+  color: #888;
+}
+
+.timeline-end-football {
+  justify-content: center;
+}
+
+.ball-icon-football {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: white;
+  z-index: 10;
+}
+
+.actual-time-football {
+  color: var(--ion-color-primary);
+  margin-bottom: 8px;
+}
+
+.active-progress-football {
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  --progress-background: var(--ion-color-primary);
+}
+
+.total-progress-football {
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  --progress-background: #e0e0e0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.stats-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.player-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.stats-column {
+  width: 50%;
+}
+
+.player-avatar-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.player-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.player-badge {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.player-badge.yellow {
+  background-color: #ffc107;
+  left: 0;
+}
+
+.player-badge.blue {
+  background-color: #3880ff;
+  right: 0;
+}
+
+.football-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.player-name {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.stat-value {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.2;
+}
+
+/* Stats Section */
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-badge {
+  padding: 4px 10px;
+  border-radius: 16px;
+  background-color: #7e57c2;
+}
+
+.stat-name {
+  color: #333;
+  width: fit-content;
+}
+
+.stat-value-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+}
+
+.arrow-icon {
+  color: #ffc107;
+  font-size: 20px;
+}
+
+.see-all-button {
+  color: #777;
+  font-size: 14px;
+}
+
+.start {
+  margin-left: 10px;
+  
+}
+
+.date-badge {
+  width: 20px;
+  height: 20px;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.info-icon {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+ion-label h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+ion-label p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Segment customization */
+ion-segment {
+  --background: transparent;
+  border-bottom: 1px solid #eee;
+}
+
+ion-segment-button {
+  --indicator-color: #3880ff;
+  --color-checked: #3880ff;
+  --color: #777;
+  text-transform: none;
+  min-height: 40px;
+}
+
+ion-segment-button::part(indicator) {
+  height: 2px;
+}
+
+.tabHeader {
+  padding: 5px 15px;
+  border: 1px solid #1976d2;
+  border-radius: 20px;
+}
+ion-tab-button {
+  --ripple-color: transparent;
+  --background-activated: transparent;
+  --background-activated-opacity: 1;
+}
+
+ion-tab-button::part(native) {
+  transition: none;
+}
